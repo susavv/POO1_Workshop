@@ -74,10 +74,10 @@ public class Workshop {
             c++;
          }
         }
-        if(c>2){
-            return false;
+        if(c==2){
+            return true;
          }
-         return true;
+         return false;
     }
 
     // Método que genera una serie de Fibonacci

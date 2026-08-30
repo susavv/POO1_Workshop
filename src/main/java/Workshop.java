@@ -51,8 +51,8 @@ public class Workshop {
         // Ejemplo: Si n = 5, el resultado debería ser 120.
         // Lanzar IllegalArgumentException si n es negativo.
         if (n<0){
-            System.out.println("IllegalArgumentException");
-        }else{
+            throw new IllegalArgumentException();
+        }
             
         int r=1;
         for(int i=1;i<=n;i++){
@@ -61,7 +61,6 @@ public class Workshop {
 
         }
         return r;
-        }
     }
 
     // Método que verifica si un número es primo

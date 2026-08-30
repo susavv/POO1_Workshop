@@ -34,8 +34,15 @@ public class Workshop {
     // Método que retorna la tabla de multiplicar de un número
     public int[] tablaMultiplicar(int numero, int limite) {
         // TODO: Implementar el método para retornar la tabla de multiplicar del número dado.
-        // Ejemplo: Si numero = 2 y limite = 5, el resultado debería ser [2, 4, 6, 8, 10].
-        return new int[0];
+        // Ejemplo: Si numero = 2 y limite = 5, el resultado debería ser [2, 4, 6, 8, 10]
+        int tabla[]=new int[limite];
+
+        for(int i=0;i<limite;i++)
+        {
+          tabla[i]=numero*(i+1);
+        }
+
+        return tabla;
     }
 
     // Método que calcula el factorial de un número entero
@@ -43,13 +50,7 @@ public class Workshop {
         // TODO: Implementar el método para calcular el factorial de un número entero.
         // Ejemplo: Si n = 5, el resultado debería ser 120.
         // Lanzar IllegalArgumentException si n es negativo.
-        int r=1;
-        for(int i=1;i<=n;i++){
-
-            r=r*i;
-
-        }
-        return r;
+        return 0;
     }
 
     // Método que verifica si un número es primo
